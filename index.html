@@ -13,7 +13,7 @@
     />
   </head>
   <body>
-    <div class="container">
+    <div id="container">
       <nav class="navbar">
         <div>
           <a href="#home"
@@ -32,7 +32,7 @@
         <div class="headertxt">
           <h1>A better way</h1>
           <h1>to manage your team</h1>
-          <p class="header-paragraph"> 
+          <p class="header-paragraph">
             Manage, Organise, Track. <span>STRYD</span> is your new all-in-one
             solution
           </p>
@@ -40,16 +40,16 @@
           <div class="download-container">
             <div class="download">
               <div>
-                <img src="images/apple.png" height="50px" alt="">
+                <img src="images/apple.png" height="50px" alt="" />
               </div>
-              <div>Get it on <Strong>App Store</Strong> </div>
+              <div>Get it on <strong>App Store</strong></div>
             </div>
             <div class="download">
               <div>
-                <img src="images/google-play.png" height="50px" alt="">
+                <img src="images/google-play.png" height="50px" alt="" />
               </div>
               <div>
-                <div>Get it on <Strong>Google play</Strong> </div>
+                <div>Get it on <strong>Google play</strong></div>
               </div>
             </div>
           </div>
@@ -70,7 +70,8 @@
           </div>
           <div class="title">Business Intelligence</div>
           <div class="info">
-            Gain insight into every channel of business through multi-plaform integrations and a deep understanding of analytics.
+            Gain insight into every channel of business through multi-plaform
+            integrations and a deep understanding of analytics.
           </div>
         </div>
 
@@ -80,7 +81,8 @@
           </div>
           <div class="title">Built By You</div>
           <div class="info">
-            Built by operators for operators. STRYD is the product of decades of experience in venue and event management.
+            Built by operators for operators. STRYD is the product of decades of
+            experience in venue and event management.
           </div>
         </div>
 
@@ -90,12 +92,33 @@
           </div>
           <div class="title">What You Deserve</div>
           <div class="info">
-            
-            Our team is your team, providing support and saisfaction you can count count on while improving the platform you depend on.
+            Our team is your team, providing support and saisfaction you can
+            count count on while improving the platform you depend on.
           </div>
         </div>
       </main>
       <div class="footer-txt">The Platform You Need</div>
     </div>
+    <script>
+      const container = document.getElementById('container')
+
+      const images = [
+        "images/HALLWAY.avif",
+        "images/READING.avif",
+        "images/SUNFLOWER.avif",
+        "images/FLOWER.avif",
+        "images/papers.jpg",
+      ];
+
+      // Function to change background image
+      function changeBackground() {
+        const randomIndex = Math.floor(Math.random() * images.length);
+        container.style.backgroundImage = `url(${images[randomIndex]})`;
+      }
+
+      setInterval(changeBackground,4000);
+
+      changeBackground();
+    </script>
   </body>
 </html>
