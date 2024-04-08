@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  font-family: roboto;
+  padding: 0;
+  background-color: black;
+}
+.container {
+  justify-content: center;
+  background-image: url(images/brandi-redd-aJTiW00qqtI-unsplash.jpg);
+  height: 100%;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: 100%;
+  padding: 10px 70px;
+  font-family: "Roboto", sans-serif;
+  width: auto;
+  margin: 0 250px;
+}
+.navbar {
+  /* overflow: auto; */
+  display: flex;
+  justify-content: space-between;
+}
+.login {
+  box-shadow: 5px 5px 5px #888888;
+  color: white;
+  /* background-image: linear-gradient(to right, white, #473eec); */
+  background-color: #6C63FF;
+  border-style: none;
+  font-weight: 600;
+}
+.login a {
+  color: white;
+}
+
+.started {
+  border-color: #6C63FF;
+  background-color: white;
+  color: #6C63FF;
+  border-style: solid;
+  font-weight: 600;
+}
+.started a {
+  color: #6C63FF;
+}
+.started:hover {
+  background-color: #6C63FF;
+}
+.started a:hover {
+  color: white;
+}
+
+.navbar a {
+  display: block;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  width: auto;
+}
+.navbar button {
+  border-radius: 60px;
+  height: fit-content;
+}
+.navbar div {
+  /* height: auto; */
+  margin: 20px 0px
+}
+
+.started:hover {
+  color: white;
+  background-color: #6C63FF;
+}
+
+.navbar .home {
+  order: -1; /* Move the home button to the beginning */
+  margin-right: auto; /* Push the home button to the left */
+}
+/* NAV BAR STYLING ENDS */
+
+/* HEADER STYLES */
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.headertxt {
+  line-height: 20px;
+  color: rgb(50, 71, 89);
+}
+.header-paragraph {
+  font-weight: 600;
+}
+.headerbutton {
+  height: fit-content;
+  padding: 10px 20px;
+  background-color: #9591df;
+  border-style: none;
+  color: rgb(50, 71, 89);
+  font-weight: 600;
+  box-shadow: 10px 10px 10px #888888;
+  
+}
+.download-container {
+  display: flex;
+  flex-direction: right;
+  gap: 20px;
+  cursor: pointer;
+}
+.download {
+  display: flex;
+  flex-direction:right;
+  align-items: center;
+
+}
+strong {
+  font-size: 24px;
+  display: block;
+}
+
+ /* MAIN SECTI0N DESIGN */ 
+.main {
+  display: flex;
+  flex-direction:right;
+  align-items: end;
+} 
+.card {
+  width: 200px;
+  background-color: whitesmoke;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: auto;
+  text-align: center;
+}
+
+.card:nth-child(2) {
+  height: 300px;
+  
+}
+.card img {
+  border-radius: 5px 5px 0 0;
+  margin: 0px auto;
+}
+
+.card .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #6C63FF;
+  padding: 30px 0;
+}
+
+.card .info {
+  font-size: 14px;
+  margin-top: 10px;
+  color: rgb(128, 154, 175);
+}
+.card-image {
+  margin: 0px auto;
+  justify-content: center;
+  align-items: center;
+}
+/* footer design */
+.footer-txt {
+  text-align: center;
+  font-size: 24px;
+  /* color: rgb(50, 71, 89); */
+  color: #6C63FF;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
